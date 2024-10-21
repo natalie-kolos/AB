@@ -1,0 +1,104 @@
+// main: style.less
+
+@import "vars";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+.header-custom {
+  position: relative;
+  margin-bottom: 56px;
+
+  .header-description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: @primary;
+    padding: 12px;
+
+    h1 {
+      color: @white;
+      font-family: @font-secondary;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.text-block {
+  margin-bottom: 56px;
+
+  h3 {
+    color: @text-primary;
+    font-size: 24px;
+    font-family: @font-primary;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 32px;
+    line-height: 2.2;
+  }
+
+  h4 {
+    font-family: @font-primary;
+  }
+
+  a {
+    color: @white;
+  }
+
+  p {
+    color: @text-primary;
+    font-family: @font-primary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  &.text-block-main {
+    h2 {
+      text-align: center;
+      font-size: 46px;
+      text-transform: none;
+      margin-bottom: 32px;
+      font-family: @font-primary;
+      font-weight: 400;
+    }
+  }
+
+  &.text-block-dark {
+    background-color: @primary;
+    color: @white;
+    padding: 40px 0;
+
+    h3 {
+      border-bottom: 1px solid rgba(217, 217, 217, 0.36);
+      color: @white;
+    }
+
+    p {
+      color: @white;
+    }
+  }
+
+  &.text-block-reversed {
+    .row {
+      @media @breakpoint-tablet {
+        flex-direction: row-reverse;
+      }
+
+    }
+  }
+  &.text-block-bg{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(https://placehold.co/1920x600) lightgray 50% / cover no-repeat;;
+  margin-bottom: 0;
+  }
+}
