@@ -201,9 +201,76 @@
                 </div>
             </div>
         </div>
+        <style>
+            .container-custom {
+                width: 100%;
+                padding-right: 12px;
+                padding-left: 12px;
+                margin-right: auto;
+                margin-left: auto;
+            }
 
-        <div class="text-block text-block-dark">
-            <div class="container">
+            @media (min-width: 576px) {
+                .container-custom {
+                    max-width: 540px;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .container-custom {
+                    max-width: 720px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .container-custom {
+                    max-width: 960px;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .container-custom {
+                    max-width: 1140px;
+                }
+            }
+
+            @media (min-width: 1400px) {
+                .container-custom {
+                    max-width: 1320px;
+                }
+            }
+
+            .text-block-dark-custom {
+                background-color: #171717;
+                color: #fff;
+                padding: 40px 0;
+            }
+
+            .text-center {
+                text-align: center !important;
+            }
+
+            .text-block-dark-custom h3 {
+                border-bottom: 1px solid rgba(217, 217, 217, 0.36);
+                color: #fff;
+                font-size: 24px;
+                font-family: 'Roboto Slab', serif;
+                text-transform: uppercase;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 100%;
+                margin-bottom: 32px;
+                line-height: 2.2;
+            }
+
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+        <div class="text-block-dark-custom">
+            <div class="container-custom">
                 <div class="text-block-description text-center">
                     <h3>FOUNDING SPONSOR</h3>
                     <img class="img-fluid" src="https://placehold.co/650x85"
