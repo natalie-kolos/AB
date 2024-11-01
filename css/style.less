@@ -15,6 +15,12 @@
     width: 100%;
     background-color: @primary;
     padding: 12px;
+    @media @breakpoint-tablet{
+      position: relative;
+      h1{
+        font-size: 24px;
+      }
+    }
 
     h1 {
       color: @white;
@@ -63,6 +69,17 @@
     line-height: 160%;
   }
 
+  ul{
+    li{
+      font-size: 16px;
+    }
+  }
+
+  h4{
+    border-bottom: 0;
+    font-size: 22px;
+  }
+
   &.text-block-main {
     h2 {
       text-align: center;
@@ -101,5 +118,24 @@
   &.text-block-bg{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(https://placehold.co/1920x600) lightgray 50% / cover no-repeat;;
   margin-bottom: 0;
+
   }
+}
+
+.ratio-16x9 {
+  --bs-aspect-ratio: calc(9 / 16* 100%);
+}
+
+.ratio {
+  position: relative;
+  width: 100%;
+}
+
+.btn-custom-primary{
+  background-color: @secondary;
+  padding: 12px 24px;
+  color: @white;
+  border-radius: 0;
+  font-family: @font-primary;
+  font-size: 16px;
 }
